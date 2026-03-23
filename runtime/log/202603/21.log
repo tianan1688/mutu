@@ -1,0 +1,163 @@
+[2026-03-21T13:25:34+08:00][sql] CONNECT:[ UseTime:0.000706s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:25:34+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000494s ]
+[2026-03-21T13:25:34+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[2026-03-21T13:25:34+08:00][sql] SHOW FULL COLUMNS FROM `user_member_order` [ RunTime:0.000405s ]
+[2026-03-21T13:25:34+08:00][sql] SELECT COUNT(*) AS think_count FROM `user_member_order` [ RunTime:0.000279s ]
+[2026-03-21T13:25:34+08:00][sql] SELECT * FROM `user_member_order` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000321s ]
+[2026-03-21T13:25:48+08:00][sql] CONNECT:[ UseTime:0.000464s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:25:48+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000538s ]
+[2026-03-21T13:25:48+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[2026-03-21T13:25:48+08:00][sql] SHOW FULL COLUMNS FROM `resource_category` [ RunTime:0.000563s ]
+[2026-03-21T13:25:48+08:00][sql] SELECT * FROM `resource_category` ORDER BY `sort` ASC [ RunTime:0.000260s ]
+[2026-03-21T13:25:57+08:00][sql] CONNECT:[ UseTime:0.000459s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:25:57+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000503s ]
+[2026-03-21T13:25:57+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000284s ]
+[2026-03-21T13:25:57+08:00][sql] SHOW FULL COLUMNS FROM `goods_category` [ RunTime:0.000367s ]
+[2026-03-21T13:25:57+08:00][sql] SELECT * FROM `goods_category` ORDER BY `sort` ASC [ RunTime:0.000241s ]
+[2026-03-21T13:29:41+08:00][sql] CONNECT:[ UseTime:0.000505s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:29:41+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000475s ]
+[2026-03-21T13:29:41+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000300s ]
+[2026-03-21T13:29:44+08:00][sql] CONNECT:[ UseTime:0.000462s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:29:44+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000504s ]
+[2026-03-21T13:29:44+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000302s ]
+[2026-03-21T13:29:47+08:00][sql] CONNECT:[ UseTime:0.000484s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:29:47+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000500s ]
+[2026-03-21T13:29:47+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000319s ]
+[2026-03-21T13:29:47+08:00][sql] SHOW FULL COLUMNS FROM `resource_category` [ RunTime:0.000442s ]
+[2026-03-21T13:29:47+08:00][sql] SELECT * FROM `resource_category` ORDER BY `sort` ASC [ RunTime:0.000248s ]
+[2026-03-21T13:29:50+08:00][sql] CONNECT:[ UseTime:0.000423s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:29:50+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000504s ]
+[2026-03-21T13:29:50+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000284s ]
+[2026-03-21T13:29:50+08:00][sql] SHOW FULL COLUMNS FROM `user_member_order` [ RunTime:0.000402s ]
+[2026-03-21T13:29:50+08:00][sql] SELECT SUM(`price`) AS think_sum FROM `user_member_order` WHERE  `pay_status` = 1  AND `create_time` >= 1772294400 [ RunTime:0.000280s ]
+[2026-03-21T13:29:50+08:00][sql] SHOW FULL COLUMNS FROM `goods_order` [ RunTime:0.000391s ]
+[2026-03-21T13:29:50+08:00][sql] SELECT SUM(`actual_pay`) AS think_sum FROM `goods_order` WHERE  `pay_status` = 1  AND `create_time` >= 1772294400 [ RunTime:0.000271s ]
+[2026-03-21T13:29:50+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.000387s ]
+[2026-03-21T13:29:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `user` WHERE  `create_time` >= 1774022400 [ RunTime:0.000248s ]
+[2026-03-21T13:29:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `user_member_order` WHERE  `pay_status` = 1  AND `pay_time` >= 1774022400 [ RunTime:0.000238s ]
+[2026-03-21T13:29:50+08:00][sql] SHOW FULL COLUMNS FROM `user_download_record` [ RunTime:0.000375s ]
+[2026-03-21T13:29:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `user_download_record` WHERE  `create_time` >= 1774022400 [ RunTime:0.000249s ]
+[2026-03-21T13:29:50+08:00][sql] SHOW FULL COLUMNS FROM `distributor` [ RunTime:0.000404s ]
+[2026-03-21T13:29:50+08:00][sql] SELECT SUM(`frozen_commission`) AS think_sum FROM `distributor` [ RunTime:0.000240s ]
+[2026-03-21T13:29:50+08:00][sql] SHOW FULL COLUMNS FROM `complaint` [ RunTime:0.000382s ]
+[2026-03-21T13:29:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `complaint` WHERE  `status` = 0 [ RunTime:0.000237s ]
+[2026-03-21T13:29:50+08:00][sql] SHOW FULL COLUMNS FROM `withdraw_apply` [ RunTime:0.000364s ]
+[2026-03-21T13:29:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `withdraw_apply` WHERE  `status` = 0 [ RunTime:0.000226s ]
+[2026-03-21T13:29:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `withdraw_apply` WHERE  `status` = 0  AND `create_time` < 1773984590 [ RunTime:0.000265s ]
+[2026-03-21T13:29:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `goods_order` WHERE  `pay_status` = 1  AND `shipping_status` = 0  AND `pay_time` < 1773898190 [ RunTime:0.000238s ]
+[2026-03-21T13:29:53+08:00][sql] CONNECT:[ UseTime:0.000437s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:29:53+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000494s ]
+[2026-03-21T13:29:53+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000286s ]
+[2026-03-21T13:29:53+08:00][sql] SHOW FULL COLUMNS FROM `resource_category` [ RunTime:0.000370s ]
+[2026-03-21T13:29:53+08:00][sql] SELECT * FROM `resource_category` ORDER BY `sort` ASC [ RunTime:0.000247s ]
+[2026-03-21T13:29:54+08:00][sql] CONNECT:[ UseTime:0.000462s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:29:54+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000480s ]
+[2026-03-21T13:29:54+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000309s ]
+[2026-03-21T13:29:54+08:00][sql] SHOW FULL COLUMNS FROM `resource_category` [ RunTime:0.000413s ]
+[2026-03-21T13:29:54+08:00][sql] SELECT * FROM `resource_category` ORDER BY `sort` ASC [ RunTime:0.000256s ]
+[2026-03-21T13:29:55+08:00][sql] CONNECT:[ UseTime:0.000418s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:29:55+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000462s ]
+[2026-03-21T13:29:55+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000311s ]
+[2026-03-21T13:29:55+08:00][sql] SHOW FULL COLUMNS FROM `resource` [ RunTime:0.000430s ]
+[2026-03-21T13:29:55+08:00][sql] SELECT COUNT(*) AS think_count FROM `resource` [ RunTime:0.000215s ]
+[2026-03-21T13:30:06+08:00][sql] CONNECT:[ UseTime:0.000418s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:30:06+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000479s ]
+[2026-03-21T13:30:06+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000324s ]
+[2026-03-21T13:30:06+08:00][sql] CONNECT:[ UseTime:0.000425s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:30:06+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000474s ]
+[2026-03-21T13:30:06+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000307s ]
+[2026-03-21T13:30:06+08:00][sql] SHOW FULL COLUMNS FROM `resource_category` [ RunTime:0.000393s ]
+[2026-03-21T13:30:06+08:00][sql] SELECT * FROM `resource_category` ORDER BY `sort` ASC [ RunTime:0.000249s ]
+[2026-03-21T13:30:06+08:00][sql] CONNECT:[ UseTime:0.000410s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:30:06+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000488s ]
+[2026-03-21T13:30:06+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+[2026-03-21T13:30:06+08:00][sql] SHOW FULL COLUMNS FROM `resource` [ RunTime:0.000414s ]
+[2026-03-21T13:30:06+08:00][sql] SELECT COUNT(*) AS think_count FROM `resource` [ RunTime:0.000222s ]
+[2026-03-21T13:46:07+08:00][sql] CONNECT:[ UseTime:0.000461s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:46:07+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000504s ]
+[2026-03-21T13:46:07+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[2026-03-21T13:46:07+08:00][sql] SHOW FULL COLUMNS FROM `system_config` [ RunTime:0.000396s ]
+[2026-03-21T13:46:07+08:00][sql] SELECT * FROM `system_config` [ RunTime:0.000246s ]
+[2026-03-21T13:46:23+08:00][sql] CONNECT:[ UseTime:0.000487s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:46:23+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000504s ]
+[2026-03-21T13:46:23+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000291s ]
+[2026-03-21T13:46:23+08:00][error] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mutu.config' doesn't exist[/www/wwwroot/du/mutu/vendor/topthink/think-orm/src/db/PDOConnection.php:836]
+[2026-03-21T13:46:30+08:00][sql] CONNECT:[ UseTime:0.000485s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:46:30+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000537s ]
+[2026-03-21T13:46:30+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000293s ]
+[2026-03-21T13:46:30+08:00][sql] SHOW FULL COLUMNS FROM `invite_record` [ RunTime:0.000372s ]
+[2026-03-21T13:46:30+08:00][sql] SELECT COUNT(*) AS think_count FROM `invite_record` [ RunTime:0.000220s ]
+[2026-03-21T13:46:30+08:00][sql] SELECT * FROM `invite_record` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000238s ]
+[2026-03-21T13:46:32+08:00][sql] CONNECT:[ UseTime:0.000460s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:46:32+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000502s ]
+[2026-03-21T13:46:32+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000292s ]
+[2026-03-21T13:46:32+08:00][error] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mutu.config' doesn't exist[/www/wwwroot/du/mutu/vendor/topthink/think-orm/src/db/PDOConnection.php:836]
+[2026-03-21T13:46:38+08:00][sql] CONNECT:[ UseTime:0.000426s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:46:38+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000488s ]
+[2026-03-21T13:46:38+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+[2026-03-21T13:46:53+08:00][sql] CONNECT:[ UseTime:0.000469s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:46:53+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000484s ]
+[2026-03-21T13:46:53+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000310s ]
+[2026-03-21T13:46:53+08:00][error] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mutu.config' doesn't exist[/www/wwwroot/du/mutu/vendor/topthink/think-orm/src/db/PDOConnection.php:836]
+[2026-03-21T13:47:08+08:00][sql] CONNECT:[ UseTime:0.000443s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:47:08+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000517s ]
+[2026-03-21T13:47:08+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000293s ]
+[2026-03-21T13:50:30+08:00][sql] CONNECT:[ UseTime:0.000466s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:50:30+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000589s ]
+[2026-03-21T13:50:30+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000301s ]
+[2026-03-21T13:50:33+08:00][sql] CONNECT:[ UseTime:0.000429s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:50:33+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000498s ]
+[2026-03-21T13:50:33+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000282s ]
+[2026-03-21T13:50:59+08:00][sql] CONNECT:[ UseTime:0.000451s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:50:59+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000489s ]
+[2026-03-21T13:50:59+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000336s ]
+[2026-03-21T13:51:06+08:00][sql] CONNECT:[ UseTime:0.000398s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:51:06+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000470s ]
+[2026-03-21T13:51:06+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000307s ]
+[2026-03-21T13:51:06+08:00][sql] CONNECT:[ UseTime:0.000468s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:51:06+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000498s ]
+[2026-03-21T13:51:06+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000290s ]
+[2026-03-21T13:59:04+08:00][sql] CONNECT:[ UseTime:0.000488s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:59:04+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000530s ]
+[2026-03-21T13:59:04+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000302s ]
+[2026-03-21T13:59:08+08:00][sql] CONNECT:[ UseTime:0.000444s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T13:59:08+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000529s ]
+[2026-03-21T13:59:08+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000299s ]
+[2026-03-21T13:59:08+08:00][error] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mutu.config' doesn't exist[/www/wwwroot/du/mutu/vendor/topthink/think-orm/src/db/PDOConnection.php:836]
+[2026-03-21T14:03:09+08:00][sql] CONNECT:[ UseTime:0.000467s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T14:03:09+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000496s ]
+[2026-03-21T14:03:09+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[2026-03-21T14:03:09+08:00][sql] SHOW FULL COLUMNS FROM `invite_record` [ RunTime:0.000382s ]
+[2026-03-21T14:03:09+08:00][sql] SELECT COUNT(*) AS think_count FROM `invite_record` [ RunTime:0.000233s ]
+[2026-03-21T14:03:09+08:00][sql] SELECT * FROM `invite_record` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000229s ]
+[2026-03-21T14:09:09+08:00][sql] CONNECT:[ UseTime:0.000447s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T14:09:09+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000505s ]
+[2026-03-21T14:09:09+08:00][sql] SELECT * FROM `admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000291s ]
+[2026-03-21T14:09:09+08:00][sql] UPDATE `admin`  SET `last_login_time` = 1774073349 , `update_time` = 1774073349  WHERE  (  `id` = 1 ) [ RunTime:0.000383s ]
+[2026-03-21T14:09:09+08:00][sql] SHOW FULL COLUMNS FROM `operation_log` [ RunTime:0.000535s ]
+[2026-03-21T14:09:09+08:00][sql] INSERT INTO `operation_log` SET `admin_id` = 1 , `action` = '管理员登录' , `ip` = '112.47.210.142' , `create_time` = 1774073349 [ RunTime:0.000248s ]
+[2026-03-21T14:09:10+08:00][sql] CONNECT:[ UseTime:0.000422s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T14:09:10+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000481s ]
+[2026-03-21T14:09:10+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000306s ]
+[2026-03-21T14:09:10+08:00][sql] SHOW FULL COLUMNS FROM `user_member_order` [ RunTime:0.000420s ]
+[2026-03-21T14:09:10+08:00][sql] SELECT SUM(`price`) AS think_sum FROM `user_member_order` WHERE  `pay_status` = 1  AND `create_time` >= 1772294400 [ RunTime:0.000270s ]
+[2026-03-21T14:09:10+08:00][sql] SHOW FULL COLUMNS FROM `goods_order` [ RunTime:0.000436s ]
+[2026-03-21T14:09:10+08:00][sql] SELECT SUM(`actual_pay`) AS think_sum FROM `goods_order` WHERE  `pay_status` = 1  AND `create_time` >= 1772294400 [ RunTime:0.000239s ]
+[2026-03-21T14:09:10+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.000405s ]
+[2026-03-21T14:09:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `user` WHERE  `create_time` >= 1774022400 [ RunTime:0.000239s ]
+[2026-03-21T14:09:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `user_member_order` WHERE  `pay_status` = 1  AND `pay_time` >= 1774022400 [ RunTime:0.000238s ]
+[2026-03-21T14:09:10+08:00][sql] SHOW FULL COLUMNS FROM `user_download_record` [ RunTime:0.000385s ]
+[2026-03-21T14:09:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `user_download_record` WHERE  `create_time` >= 1774022400 [ RunTime:0.000239s ]
+[2026-03-21T14:09:10+08:00][sql] SHOW FULL COLUMNS FROM `distributor` [ RunTime:0.000432s ]
+[2026-03-21T14:09:10+08:00][sql] SELECT SUM(`frozen_commission`) AS think_sum FROM `distributor` [ RunTime:0.000217s ]
+[2026-03-21T14:09:10+08:00][sql] SHOW FULL COLUMNS FROM `complaint` [ RunTime:0.000508s ]
+[2026-03-21T14:09:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `complaint` WHERE  `status` = 0 [ RunTime:0.000233s ]
+[2026-03-21T14:09:10+08:00][sql] SHOW FULL COLUMNS FROM `withdraw_apply` [ RunTime:0.000386s ]
+[2026-03-21T14:09:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `withdraw_apply` WHERE  `status` = 0 [ RunTime:0.000222s ]
+[2026-03-21T14:09:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `withdraw_apply` WHERE  `status` = 0  AND `create_time` < 1773986950 [ RunTime:0.000240s ]
+[2026-03-21T14:09:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `goods_order` WHERE  `pay_status` = 1  AND `shipping_status` = 0  AND `pay_time` < 1773900550 [ RunTime:0.000234s ]
+[2026-03-21T14:10:41+08:00][sql] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;port=3306;dbname=mutu;charset=utf8mb4
+[2026-03-21T14:10:41+08:00][sql] SHOW FULL COLUMNS FROM `admin` [ RunTime:0.000491s ]
+[2026-03-21T14:10:41+08:00][sql] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000304s ]
+[2026-03-21T14:10:41+08:00][sql] SHOW FULL COLUMNS FROM `resource_category` [ RunTime:0.000395s ]
+[2026-03-21T14:10:41+08:00][sql] SELECT * FROM `resource_category` ORDER BY `sort` ASC [ RunTime:0.000248s ]

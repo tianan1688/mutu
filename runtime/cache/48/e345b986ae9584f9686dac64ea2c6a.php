@@ -1,0 +1,4 @@
+<?php
+//000000003600
+ exit();?>
+a:25:{s:9:"site_name";s:13:"MuTu轻副业";s:9:"site_logo";s:0:"";s:14:"site_copyright";s:12:"© 2025 MuTu";s:8:"site_icp";s:0:"";s:11:"kefu_mobile";s:0:"";s:11:"kefu_qrcode";s:0:"";s:20:"download_link_expire";i:600;s:22:"download_limit_per_day";i:10;s:17:"point_expire_days";i:30;s:24:"point_expire_notice_days";i:5;s:14:"refund_minutes";i:15;s:17:"auto_confirm_days";i:7;s:20:"invite_reward_enable";i:1;s:21:"invite_points_inviter";i:100;s:21:"invite_points_invited";i:50;s:18:"distributor_enable";i:1;s:27:"distributor_apply_need_real";i:1;s:24:"commission_resource_rate";d:10;s:20:"commission_mall_rate";d:5;s:12:"withdraw_min";d:10;s:12:"withdraw_fee";d:0;s:14:"message_enable";i:1;s:13:"login_captcha";i:1;s:16:"watermark_enable";i:0;s:14:"watermark_text";s:4:"MuTu";}
